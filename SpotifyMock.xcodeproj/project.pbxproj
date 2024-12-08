@@ -95,6 +95,17 @@
 		360E47C72D062286008B81A1 /* AddTrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E47C62D062286008B81A1 /* AddTrackCell.swift */; };
 		360E47C92D0626D4008B81A1 /* SearchTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E47C82D0626D4008B81A1 /* SearchTabViewModel.swift */; };
 		360E47CB2D062825008B81A1 /* PlaylistTrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E47CA2D062825008B81A1 /* PlaylistTrackCell.swift */; };
+		360E47D02D063194008B81A1 /* ExtensionXCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E47CF2D063194008B81A1 /* ExtensionXCTestCase.swift */; };
+		360E47D62D063256008B81A1 /* TestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E47D52D063256008B81A1 /* TestCase.swift */; };
+		360E47D92D06340A008B81A1 /* MockRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E47D82D06340A008B81A1 /* MockRequestable.swift */; };
+		360E47DB2D0635D4008B81A1 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E47DA2D0635D4008B81A1 /* NetworkServiceTests.swift */; };
+		360E47DD2D063623008B81A1 /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E47DC2D063623008B81A1 /* MockNetworkService.swift */; };
+		360E47E02D063D1D008B81A1 /* MockResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E47DF2D063D1D008B81A1 /* MockResponse.swift */; };
+		360E47E42D063DA3008B81A1 /* SearchRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E47E32D063DA3008B81A1 /* SearchRepositoryTests.swift */; };
+		360E47E62D063E62008B81A1 /* TrackListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E47E52D063E62008B81A1 /* TrackListResponse.swift */; };
+		360E47E82D0641B8008B81A1 /* MockSessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E47E72D0641B8008B81A1 /* MockSessionService.swift */; };
+		360E47EA2D064812008B81A1 /* MockSearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E47E92D064812008B81A1 /* MockSearchRepository.swift */; };
+		360E47ED2D06488D008B81A1 /* SearchUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E47EC2D06488D008B81A1 /* SearchUseCaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -204,6 +215,17 @@
 		360E47C62D062286008B81A1 /* AddTrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTrackCell.swift; sourceTree = "<group>"; };
 		360E47C82D0626D4008B81A1 /* SearchTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabViewModel.swift; sourceTree = "<group>"; };
 		360E47CA2D062825008B81A1 /* PlaylistTrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTrackCell.swift; sourceTree = "<group>"; };
+		360E47CF2D063194008B81A1 /* ExtensionXCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionXCTestCase.swift; sourceTree = "<group>"; };
+		360E47D52D063256008B81A1 /* TestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCase.swift; sourceTree = "<group>"; };
+		360E47D82D06340A008B81A1 /* MockRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRequestable.swift; sourceTree = "<group>"; };
+		360E47DA2D0635D4008B81A1 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		360E47DC2D063623008B81A1 /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
+		360E47DF2D063D1D008B81A1 /* MockResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockResponse.swift; sourceTree = "<group>"; };
+		360E47E32D063DA3008B81A1 /* SearchRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryTests.swift; sourceTree = "<group>"; };
+		360E47E52D063E62008B81A1 /* TrackListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListResponse.swift; sourceTree = "<group>"; };
+		360E47E72D0641B8008B81A1 /* MockSessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSessionService.swift; sourceTree = "<group>"; };
+		360E47E92D064812008B81A1 /* MockSearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSearchRepository.swift; sourceTree = "<group>"; };
+		360E47EC2D06488D008B81A1 /* SearchUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUseCaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,6 +298,12 @@
 		360E46D62D02DEC0008B81A1 /* SpotifyMockTests */ = {
 			isa = PBXGroup;
 			children = (
+				360E47EB2D064882008B81A1 /* UseCases */,
+				360E47E12D063D7A008B81A1 /* Repositories */,
+				360E47D12D063237008B81A1 /* Network */,
+				360E47CE2D06318C008B81A1 /* Extensions */,
+				360E47DE2D063D0F008B81A1 /* MockResponses */,
+				360E47D42D063249008B81A1 /* Base */,
 				360E46D72D02DEC0008B81A1 /* SpotifyMockTests.swift */,
 			);
 			path = SpotifyMockTests;
@@ -633,6 +661,75 @@
 			path = Subviews;
 			sourceTree = "<group>";
 		};
+		360E47CE2D06318C008B81A1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				360E47CF2D063194008B81A1 /* ExtensionXCTestCase.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		360E47D12D063237008B81A1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				360E47D72D0633F8008B81A1 /* MockServices */,
+				360E47DA2D0635D4008B81A1 /* NetworkServiceTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		360E47D42D063249008B81A1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				360E47D52D063256008B81A1 /* TestCase.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		360E47D72D0633F8008B81A1 /* MockServices */ = {
+			isa = PBXGroup;
+			children = (
+				360E47D82D06340A008B81A1 /* MockRequestable.swift */,
+				360E47E72D0641B8008B81A1 /* MockSessionService.swift */,
+				360E47DC2D063623008B81A1 /* MockNetworkService.swift */,
+			);
+			path = MockServices;
+			sourceTree = "<group>";
+		};
+		360E47DE2D063D0F008B81A1 /* MockResponses */ = {
+			isa = PBXGroup;
+			children = (
+				360E47DF2D063D1D008B81A1 /* MockResponse.swift */,
+				360E47E52D063E62008B81A1 /* TrackListResponse.swift */,
+			);
+			path = MockResponses;
+			sourceTree = "<group>";
+		};
+		360E47E12D063D7A008B81A1 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				360E47E22D063D82008B81A1 /* MockRepositories */,
+				360E47E32D063DA3008B81A1 /* SearchRepositoryTests.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		360E47E22D063D82008B81A1 /* MockRepositories */ = {
+			isa = PBXGroup;
+			children = (
+				360E47E92D064812008B81A1 /* MockSearchRepository.swift */,
+			);
+			path = MockRepositories;
+			sourceTree = "<group>";
+		};
+		360E47EB2D064882008B81A1 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				360E47EC2D06488D008B81A1 /* SearchUseCaseTests.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -860,7 +957,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				360E47DD2D063623008B81A1 /* MockNetworkService.swift in Sources */,
+				360E47ED2D06488D008B81A1 /* SearchUseCaseTests.swift in Sources */,
+				360E47DB2D0635D4008B81A1 /* NetworkServiceTests.swift in Sources */,
+				360E47E62D063E62008B81A1 /* TrackListResponse.swift in Sources */,
+				360E47D02D063194008B81A1 /* ExtensionXCTestCase.swift in Sources */,
+				360E47D62D063256008B81A1 /* TestCase.swift in Sources */,
+				360E47D92D06340A008B81A1 /* MockRequestable.swift in Sources */,
+				360E47E82D0641B8008B81A1 /* MockSessionService.swift in Sources */,
+				360E47EA2D064812008B81A1 /* MockSearchRepository.swift in Sources */,
+				360E47E02D063D1D008B81A1 /* MockResponse.swift in Sources */,
 				360E46D82D02DEC0008B81A1 /* SpotifyMockTests.swift in Sources */,
+				360E47E42D063DA3008B81A1 /* SearchRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

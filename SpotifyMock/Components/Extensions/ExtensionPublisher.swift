@@ -20,7 +20,7 @@ extension Publisher {
   }
   
   func sinkToResult(
-    onReceiveValue: @escaping (Output) -> Void,
+    onReceiveValue: ((Output) -> Void)? = nil,
     onFailure: ((Error) -> Void)? = nil,
     storeIn cancellables: inout Set<AnyCancellable>
   ) {
@@ -33,7 +33,9 @@ extension Publisher {
           onFailure?(error)
         }
       },
-      receiveValue: onReceiveValue
+      receiveValue: { output in
+        onReceiveValue?(output)
+      }
     )
     .store(in: &cancellables)
   }

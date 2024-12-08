@@ -5,7 +5,7 @@
 //  Created by Muhammad Affan on 07/12/24.
 //
 
-struct TrackResponse: Decodable {
+struct TrackResponse: Decodable, Equatable {
   let artistId: Int?
   let trackId: Int
   let artistName: String?
